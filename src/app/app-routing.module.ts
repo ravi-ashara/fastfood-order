@@ -24,19 +24,23 @@ const routes: Routes = [
   },
   {
     path: 'contact-us',
-    loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsPageModule)
+    loadChildren: () => import('./pages/contact-us/contact-us.module').then(m => m.ContactUsPageModule),
+    canActivate: [AuthService]
   },
   {
     path: 'profile',
-    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfilePageModule)
+    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfilePageModule),
+    canActivate: [AuthService]
   },
   {
     path: 'order-history',
-    loadChildren: () => import('./pages/order-history/order-history.module').then(m => m.OrderHistoryPageModule)
+    loadChildren: () => import('./pages/order-history/order-history.module').then(m => m.OrderHistoryPageModule),
+    canActivate: [AuthService]
   },
   {
     path: 'change-password',
-    loadChildren: () => import('./pages/change-password/change-password.module').then( m => m.ChangePasswordPageModule)
+    loadChildren: () => import('./pages/change-password/change-password.module').then( m => m.ChangePasswordPageModule),
+    canActivate: [AuthService]
   }
 ];
 
