@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuController } from '@ionic/angular';
+import { MenuController, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -8,9 +8,15 @@ import { MenuController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  constructor(public menuCtrl: MenuController) { }
+  constructor(public menuCtrl: MenuController,
+    public navCtrl: NavController) { }
 
   ngOnInit() {
     this.menuCtrl.enable(false);
+  }
+
+  login() {
+    localStorage.isLogin = true;
+    this.navCtrl.navigateRoot('home');
   }
 }
