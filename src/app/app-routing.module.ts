@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'order-history',
     loadChildren: () => import('./pages/order-history/order-history.module').then(m => m.OrderHistoryPageModule)
+  },
+  {
+    path: 'change-password',
+    loadChildren: () => import('./pages/change-password/change-password.module').then( m => m.ChangePasswordPageModule)
   }
 ];
 
