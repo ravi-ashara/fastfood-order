@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './services/auth/auth.service';
+import { ForgotPasswordPageModule } from './pages/forgot-password/forgot-password.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,8 @@ import { AuthService } from './services/auth/auth.service';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ForgotPasswordPageModule
   ],
   providers: [
     AuthService,
