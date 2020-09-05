@@ -1,12 +1,64 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar mode="ios" color="primary">
     <ion-title>Login</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
-  <ion-button (click)="login()" expand="block" shape="round">
-    <ion-ripple-effect></ion-ripple-effect>
-    Log In
-  </ion-button>
+<ion-content class="loginPage">
+  <ion-row class="setTopPadding">
+    <ion-col size="12" class="ion-text-center">
+      <img src="assets/images/food-image.jpg" />
+      <h3 class="ion-no-margin">
+        <ion-text color="primary">Welcome to Fastfood</ion-text>
+      </h3>
+      <h6 class="ion-no-margin">
+        <ion-text color="primary">SignIn to continue</ion-text>
+      </h6>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="10" offset="1">
+      <ion-item class="ion-no-padding">
+        <ion-label position="floating">Email/Mobile</ion-label>
+        <ion-input name="email-mobile" autofocus="true" clearInput="true" enterkeyhint="next"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="10" offset="1">
+      <ion-item class="ion-no-padding">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input name="password" type="password" clearInput="true"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="12" class="ion-text-center">
+      <ion-button (click)="login()" shape="round">
+        <ion-ripple-effect></ion-ripple-effect>
+        Log In
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12" class="ion-text-right">
+      <ion-button (click)="forgotPassword()" fill="clear">
+        <ion-ripple-effect></ion-ripple-effect>
+        Forgot Password ?
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-top-margin">
+    <ion-col size="12" class="ion-text-center">
+      <h5 class="ion-no-margin">
+        <ion-text color="primary">Social Login</ion-text>
+      </h5>
+    </ion-col>
+    <ion-col size="6" class="ion-text-right ion-padding-end">
+      <img alt="Google Login" class="googleLogin" (click)="socialLogin('google')" src="assets/images/google_icon.png" />
+    </ion-col>
+    <ion-col size="6" class="ion-padding-start">
+      <img alt="Facebook Login" class="facebookLogin" (click)="socialLogin('facebook')"
+        src="assets/images/fb_icon.png" />
+    </ion-col>
+  </ion-row>
 </ion-content>

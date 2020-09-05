@@ -1,0 +1,17 @@
+.loginPage {
+    .setTopPadding {
+        padding-top: 15%
+    }
+
+    .googleLogin {
+        width: 100px;
+        height: 100px;
+    }
+
+    .facebookLogin {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 20px auto;
+    }
+}
