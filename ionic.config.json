@@ -1,5 +1,7 @@
 {
   "name": "fastfood-order",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
