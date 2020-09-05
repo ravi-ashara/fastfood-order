@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Change Password',
-      url: '/forgot-password',
+      url: '/change-password',
       icon: 'create'
     },
     {
@@ -38,7 +38,6 @@ export class AppComponent implements OnInit {
       icon: 'phone-portrait'
     }
   ];
-  // public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
   constructor(
     private platform: Platform,
