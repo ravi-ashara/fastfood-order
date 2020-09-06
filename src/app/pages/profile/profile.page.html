@@ -1,12 +1,45 @@
 <ion-header>
   <ion-toolbar mode="ios" color="primary">
     <ion-buttons slot="start">
-      <ion-menu-button ></ion-menu-button>
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="profilePage">
+  <ion-row class="paddingTop">
+    <ion-col size="12" class="ion-text-center">
+      <img src="assets/images/user.png" alt="User Profile" class="setUserImage">
+      <h3>Test User</h3>
+    </ion-col>
 
+    <ion-col size="12" class="ion-padding-start">
+      <h4>Email</h4>
+      <ion-text>test@testemail.com</ion-text>
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding-start">
+      <h4>Mobile</h4>
+      <ion-text>+91 8866437891</ion-text>
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding-start">
+      <h4>Address</h4>
+      <address>
+        305, Nehru Nagar Flats,
+        <br>
+        Nehru nagar circle,
+        <br>
+        Ahmedabad 360555.
+      </address>
+    </ion-col>
+
+    <ion-col size="12" class="ion-text-center ion-padding-top">
+      <ion-button shape="round">
+        <ion-ripple-effect type="bounded"></ion-ripple-effect>
+        Profile Edit
+      </ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>
