@@ -1,0 +1,33 @@
+.foodDetailsPage {
+    .set-thumbnail {
+        width: 75px;
+        height: 75px;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .set-chips {
+        height: 20px;
+        border-radius: 5px;
+        padding: 0px 10px;
+    }
+
+    .set-fav {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    .setCountSize {
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: super;
+        font-weight: 600;
+    }
+
+    .setReviewChipCenter {
+        vertical-align: -webkit-baseline-middle;
+    }
+}
