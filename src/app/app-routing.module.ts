@@ -41,6 +41,11 @@ const routes: Routes = [
     path: 'change-password',
     loadChildren: () => import('./pages/change-password/change-password.module').then( m => m.ChangePasswordPageModule),
     canActivate: [AuthService]
+  },
+  {
+    path: 'food-details',
+    loadChildren: () => import('./pages/food-details/food-details.module').then( m => m.FoodDetailsPageModule),
+    canActivate: [AuthService]
   }
 ];
 
