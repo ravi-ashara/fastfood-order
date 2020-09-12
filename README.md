@@ -1,4 +1,4 @@
-# Fast food Order
+# Fast Food Order
 
 ## INSTALL IONIC USING CLI
 
