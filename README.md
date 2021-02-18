@@ -4,6 +4,16 @@
 
  [ionic](https://ionicframework.com/docs/v3/intro/installation/)
 
+ ## SCREENSHOTS
+
+<img src="src/assets/ss/login.png" width="213"/>&nbsp;
+<img src="src/assets/ss/forgot-password.png" width="213"/>&nbsp;
+<img src="src/assets/ss/home.png" width="213"/>&nbsp;
+<img src="src/assets/ss/menu.png" width="213"/>&nbsp;
+<img src="src/assets/ss/details.png" width="213"/>&nbsp;
+<img src="src/assets/ss/profile.png" width="213"/>&nbsp;
+<img src="src/assets/ss/change-password.png" width="213"/>
+
 ## OPEN PROJECT ON BROWSER
 
 ```
